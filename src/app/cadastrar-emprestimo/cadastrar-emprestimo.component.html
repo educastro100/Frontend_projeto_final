@@ -1,0 +1,52 @@
+<div class="text-center">
+
+    <br>
+    <h3 class="text-center">Registrar Emprestimo</h3>
+
+    <div class="container card text-center col-md-6">
+
+        <div class="card-body">
+
+
+            <div class="container form-group">
+                <div class="form-row">
+
+                    <label>Usuário</label>
+
+                        <select [(ngModel)]="userEmp" class="form-control col-md-4">
+                            <option *ngFor="let u of listaUsuario" value = {{u}}>{{u.nome}}</option>
+                        </select>
+
+                        
+                        <label>Livro 01</label>
+                        <select [(ngModel)]="objEmp.livro1" class="form-control col-md-4">
+                            <option *ngFor="let l of listaLivro" value = {{l._id}}>{{l.nome}}</option>
+                        </select>
+
+                   
+                        <label>Livro 02</label>
+                        <select [(ngModel)]="objEmp.livro2" class="form-control col-md-4">
+                            <option *ngFor="let l of listaLivro" value = {{l._id}}>{{l.nome}}</option>
+                        </select>
+
+                        <label>Livro 03</label>
+                        <select [(ngModel)]="objEmp.livro3" class="form-control col-md-4">
+                            <option  *ngFor="let l of listaLivro" value = {{l._id}}>{{l.nome}}</option>
+                        </select>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="card-footer text-muted">
+            <button class="btn btn-success" (click)="cadastrar()">Cadastrar</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</div>

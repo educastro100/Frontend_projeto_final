@@ -1,0 +1,40 @@
+
+
+<div class="">
+
+    <br>
+    <h3 class="text-center">Editar Usuário</h3>
+    <div class="container form-group">
+        <div class="form-row">
+
+
+    <label>Nome</label>
+        <input class="form-control col-md-4" [(ngModel)]="usuario.nome" placeholder="Nome">
+    
+
+    <label>CPF</label>
+        <input class="form-control col-md-4" [(ngModel)]="usuario.cpf" placeholder="cpf">
+    
+
+    <label>Email</label>
+        <input class="form-control col-md-4" [(ngModel)]="usuario.email" placeholder="e-mail">
+    
+
+    <label>Idade</label>
+        <input class="form-control col-md-4" [(ngModel)]="usuario.idade" placeholder="Idade">
+    
+
+    <label>Senha</label>
+        <input type="password" class="form-control col-md-4" [(ngModel)]="usuario.senha" placeholder="Senha">
+    
+
+</div>
+<div class="text-center">
+    <br>
+    <button class="btn btn-success" (click)="editar()" >Editar</button>
+
+</div>
+
+</div>
+
+</div>

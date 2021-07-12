@@ -1,0 +1,89 @@
+
+
+
+<h3 class="text-center">Empréstimo para {{emprestimo.nomeUsuario}}</h3>
+
+<div class="container card text-center col-md-6">
+    
+    <div class="card-body">
+    
+        <p class="text-center ">Data de Retirada: {{emprestimo.dataIni}}</p>
+        <p class="text-center ">Data de Entrega: {{emprestimo.dataFim}}</p>
+        
+        <h4 class="text-center">Livros Emprestados:</h4>
+        <table class="table text-center">
+        
+            <thead>
+                
+                <tr>
+                    <td> Título</td>
+                    <td> Observação</td>
+                    <td> Autor</td>
+                    <td> Categoria</td>
+                </tr>
+        
+            </thead>
+        
+        
+            <tbody>
+        
+        
+                <tr *ngFor="let l of listaLivros">
+                    <td>{{l.nome}}</td>
+                    <td>{{l.obs}}</td>
+                    <td>{{l.autor}}</td>
+                    <td>{{l.tipo}}</td>
+        
+        
+                </tr>
+        
+        
+            </tbody>
+        
+        </table>
+    </div>
+    <div class="card-footer text-muted">
+      Status: {{emprestimo.status}}
+    </div>
+  </div>
+<br>
+
+
+
+<!-- <p class="text-center ">Status: {{emprestimo.status}}</p>
+
+
+<p class="text-center ">Data de Retirada: {{emprestimo.dataIni}}</p>
+<p class="text-center ">Data de Entrega: {{emprestimo.dataFim}}</p>
+
+<h4 class="text-center">Livros Emprestados:</h4>
+<table class="table text-center">
+
+    <thead>
+        
+        <tr>
+            <td> Título</td>
+            <td> Observação</td>
+            <td> Autor</td>
+            <td> Categoria</td>
+        </tr>
+
+    </thead>
+
+
+    <tbody>
+
+
+        <tr *ngFor="let l of listaLivros">
+            <td>{{l.nome}}</td>
+            <td>{{l.obs}}</td>
+            <td>{{l.autor}}</td>
+            <td>{{l.tipo}}</td>
+
+
+        </tr>
+
+
+    </tbody>
+
+</table> -->

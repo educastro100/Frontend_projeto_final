@@ -1,0 +1,58 @@
+<div class="text-center">
+
+    <br>
+    <h3 class="text-center">Registrar Livro</h3>
+
+    <div class="container card text-center col-md-6">
+
+        <div class="card-body">
+
+
+            <div class="container form-group">
+                <div class="form-row">
+
+                    <label>Título</label>
+                        <input class="form-control col-md-4" [(ngModel)]="livro.nome" placeholder="Nome do Livro">
+                    
+
+                    <label>Ano</label>
+                        <input class="form-control col-md-4" [(ngModel)]="livro.ano" placeholder="Ano do livro">
+                   
+
+                    <label>Autor(es)</label>
+                        <input class="form-control col-md-4" [(ngModel)]="livro.autor" placeholder="Autor do livro">
+                    
+
+                    <label>Editora</label>
+                        <input class="form-control col-md-4" [(ngModel)]="livro.editora" placeholder="Editora do livro">
+                    
+
+                    <!-- To do: Alterar para um select -->
+                    <label>Tipo</label>
+                        <input class="form-control col-md-4" [(ngModel)]="livro.tipo" placeholder="Tipo do livro">
+                    
+
+                    <label>Observações</label>
+                        <input class="form-control col-md-4" [(ngModel)]="livro.obs" placeholder="Observações do livro">
+                    
+
+                    <label>Quantidade</label>
+                        <input class="form-control col-md-4" [(ngModel)]="livro.quantidade" type="number" placeholder="Quantidade disponível">
+                    
+
+                </div>
+            </div>
+
+        </div>
+        <div class="card-footer text-muted">
+            <button class="btn btn-success" (click)="cadastrar()">Cadastrar</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</div>

@@ -1,0 +1,44 @@
+
+<div class="text-center">
+
+    <br>
+    <h3 class="text-center">Registrar Usuario</h3>
+
+
+    <div class="container card text-center col-md-6">
+
+        <div class="card-body">
+            <div class="container form-group">
+                <div class="form-row">
+    <label>Nome</label>
+        <input class="form-control col-md-4" [(ngModel)]="usuario.nome" placeholder="Nome">
+    
+    <label>CPF</label>
+        <input class="form-control col-md-4" [(ngModel)]="usuario.cpf" placeholder="cpf">
+    
+
+    <label>E-mail</label>
+        <input class="form-control col-md-4" [(ngModel)]="usuario.email" placeholder="e-mail">
+    
+
+    <label>Idade</label>
+        <input class="form-control col-md-4" [(ngModel)]="usuario.idade" placeholder="Idade">
+    
+
+    <label>Senha</label>
+        <input class="form-control col-md-4" type="password" [(ngModel)]="usuario.senha" placeholder="Senha">
+   
+   
+   
+    </div>
+</div>
+   
+    </div>
+        <div class="card-footer text-muted">
+    <button class="btn btn-success" (click)="cadastrar()" >Cadastrar</button>
+
+
+</div>
+</div>
+
+</div>
